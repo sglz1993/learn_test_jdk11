@@ -1,6 +1,5 @@
 package org.py.jdk11.jedis.hello.test;
 
-import lombok.Value;
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -25,7 +24,6 @@ public class JedisTest {
         Jedis resource = jedisPool.getResource();
         resource.close();
     }
-
 
 
 }
