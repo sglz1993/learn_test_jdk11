@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class SimpleBookRepository implements BookRepository {
 
+//    参考：https://blog.csdn.net/f641385712/article/details/94570960
     @Override
     @Cacheable("org.py.spring.cache.hello.repository.SimpleBookRepository.getByIsbn")
     public Book getByIsbn(String isbn) {
