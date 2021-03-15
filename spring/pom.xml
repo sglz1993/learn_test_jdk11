@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springboot-cache</module>
+        <module>springboot-jetcache</module>
     </modules>
     <packaging>pom</packaging>
 
