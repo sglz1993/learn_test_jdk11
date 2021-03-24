@@ -13,14 +13,21 @@ public class CacheTest {
         function.get(new Man());
     }
 
+    @Test
+    public void testPersionField() {
+        Person p = new Man();
+        System.out.println(p.name);
+    }
+
     @Data
     static class Person {
-        private String name = "lala";
+        String name = "lala";
     }
 
     @Data
     static class Man extends Person{
-        private int age = 1;
+        int age = 1;
+        String name = "man";
     }
 
 }
