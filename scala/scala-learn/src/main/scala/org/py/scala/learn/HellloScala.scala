@@ -1,5 +1,8 @@
 package org.py.scala.learn
 
+import scala.beans.BeanProperty
+
+
 class HellloScala {
 
 }
@@ -12,8 +15,9 @@ object HellloScala {
 
   /**
    * lalalaal
+   *
    * @example sdfsdf
-   *            sdfsdf
+   *          sdfsdf
    * @param args sfsdf
    */
   def main(args: Array[String]): Unit = {
@@ -22,8 +26,39 @@ object HellloScala {
     println(name + "  :  " + age)
     var a = 10
     a = 12
+    val a1 = new a
+    a1.setIsVali("")
   }
 
 
+}
+
+
+class a(lala: Int, val sdd: String) {
+  @BeanProperty
+  var isVali: String
+
+//  def this(name: String) {
+//    this
+//    print()
+//  }
+//
+//  def this(age: Int) {
+//    this
+//    print()
+//    //    this("lala")
+//  }
+
+  @throws(classOf[UnsupportedClassVersionError])
+  def hello(): Unit = {
+
+  }
+
+  @throws[UnsupportedClassVersionError]
+  def hello2(): Unit = {
+
+  }
 
 }
+
+
