@@ -14,11 +14,11 @@ public class LoggerTest {
         log.error("hello error");
         log.error("hello param:{}", "i am parm");
         try {
-            int i = 1/0;
+            int i = 1 / 0;
         } catch (Exception e) {
             log.error("", e);
             log.error("lalal", e);
-            log.error("lalal:{}", "errormsg",  e);
+            log.error("lalal:{}", "errormsg", e);
         }
     }
 

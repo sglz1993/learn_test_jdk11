@@ -90,31 +90,6 @@
         </dependency>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <dependency>
             <groupId>org.py.test</groupId>
             <artifactId>common</artifactId>

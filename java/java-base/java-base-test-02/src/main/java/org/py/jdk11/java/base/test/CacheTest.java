@@ -25,7 +25,7 @@ public class CacheTest {
     }
 
     @Data
-    static class Man extends Person{
+    static class Man extends Person {
         int age = 1;
         String name = "man";
     }

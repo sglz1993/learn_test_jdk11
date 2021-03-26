@@ -8,6 +8,12 @@ package org.py.jdk11.java.base.algorithm;
 @SuppressWarnings("All")
 public class 回溯算法3简单字符串匹配Test {
 
+    public static void main(String[] args) {
+        Pattern p = new Pattern("asd*sdf*sdfs");
+        System.out.println(p.match("asdsdsdfsdsdfsdsdfs"));
+        System.out.println(p.match("asdsassdksddfsdfs"));
+    }
+
     static class Pattern {
 
         private boolean matched = false;
@@ -42,12 +48,6 @@ public class 回溯算法3简单字符串匹配Test {
                 rmatch(ti + 1, pj + 1, text, tlen);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        Pattern p = new Pattern("asd*sdf*sdfs");
-        System.out.println(p.match("asdsdsdfsdsdfsdsdfs"));
-        System.out.println(p.match("asdsassdksddfsdfs"));
     }
 }
 

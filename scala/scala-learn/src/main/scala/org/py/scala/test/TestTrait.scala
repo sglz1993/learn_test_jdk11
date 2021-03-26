@@ -3,28 +3,32 @@ package org.py.scala.test
 object TestTrait {
 
   def main(args: Array[String]): Unit = {
-    var bb: CC with BB = new CC with BB
-    println()
-    println()
-    println()
-    bb.hello()
-
-    bb.lal()
-    bb.slsl()
+    //    var bb: CC with BB = new CC with BB
+    //    println()
+    //    println()
+    //    println()
+    //    bb.hello()
+    //
+    //    bb.lal()
+    //    bb.slsl()
+    val f = new F
   }
 
 }
 
 trait A1 {
   println("create A1")
+
   def hello() = {
     println("hello A1")
   }
-//  def hello()
+
+  //  def hello()
 }
 
 trait Aim extends A1 {
   println("create A")
+
   override abstract def hello(): Unit = {
     println("hello A")
     super.hello()
@@ -44,6 +48,7 @@ trait B extends D with Aim {
 
 trait C extends Aim {
   println("create C")
+
   override def hello(): Unit = {
     println("hello C")
     super.hello()
@@ -65,6 +70,7 @@ trait BB extends B {
 
 trait CC extends C {
   println("create CC")
+
   override def hello(): Unit = {
     println("hello CC")
     super.hello()
@@ -72,9 +78,25 @@ trait CC extends C {
 }
 
 class D {
-  def lal(): Unit ={
+  def lal(): Unit = {
     println("lal")
   }
+}
+
+class E {
+  def e(): Unit = {
+
+  }
+}
+
+/**
+ * illegal inheritance; superclass E
+ * is not a subclass of the superclass D
+ * of the mixin trait BB
+ * class F extends E with BB {
+ */
+class F extends E with BB {
+
 }
 
 

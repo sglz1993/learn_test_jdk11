@@ -17,12 +17,12 @@
 
 
     <dependencies>
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/junit/junit &ndash;&gt; 不行-->
-<!--        <dependency>-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--            <version>4.13.2</version>-->
-<!--        </dependency>-->
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/junit/junit &ndash;&gt; 不行-->
+        <!--        <dependency>-->
+        <!--            <groupId>junit</groupId>-->
+        <!--            <artifactId>junit</artifactId>-->
+        <!--            <version>4.13.2</version>-->
+        <!--        </dependency>-->
 
     </dependencies>
 </project>

@@ -15,7 +15,7 @@ public class JetCacheTestEntity {
 
 
     public interface UserService {
-        @Cached(name="UserService.getUserById", expire = 3600)
+        @Cached(name = "UserService.getUserById", expire = 3600)
         UserDO getUserById(long userId);
     }
 

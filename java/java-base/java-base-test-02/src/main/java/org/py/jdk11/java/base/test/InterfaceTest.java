@@ -15,5 +15,4 @@ public abstract interface InterfaceTest {
 //    }
 
 
-
 }

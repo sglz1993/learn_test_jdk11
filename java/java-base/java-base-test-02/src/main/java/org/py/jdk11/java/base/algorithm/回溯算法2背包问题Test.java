@@ -27,7 +27,7 @@ public class 回溯算法2背包问题Test {
      * 问题：背包，n个物品不能拆分，背包怎么装最大的东西
      */
     public static void main(String[] args) {
-        f(0, 0, new int[]{11,22,33,41,52,63,74,76,81,92}, 10, 100);
+        f(0, 0, new int[]{11, 22, 33, 41, 52, 63, 74, 76, 81, 92}, 10, 100);
         System.out.println(maxW);
     }
 

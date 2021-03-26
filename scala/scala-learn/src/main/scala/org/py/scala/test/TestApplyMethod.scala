@@ -3,7 +3,7 @@ package org.py.scala.test
 object TestApplyMethod {
 
   def main(args: Array[String]): Unit = {
-//    var a : ApplyTest = ApplyTest
+    //    var a : ApplyTest = ApplyTest
   }
 
 }
