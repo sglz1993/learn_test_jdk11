@@ -11,7 +11,8 @@ object TestTrait {
     //
     //    bb.lal()
     //    bb.slsl()
-    val f = new F
+    val d = new D
+
   }
 
 }
@@ -35,7 +36,7 @@ trait Aim extends A1 {
   }
 }
 
-trait B extends D with Aim {
+trait B extends Aim {
   println("create B")
 
   def slsl();
@@ -68,7 +69,7 @@ trait BB extends B {
   }
 }
 
-trait CC extends C {
+abstract class CC extends C {
   println("create CC")
 
   override def hello(): Unit = {
@@ -77,7 +78,9 @@ trait CC extends C {
   }
 }
 
-class D {
+class D extends CC with BB {
+  println("create D")
+
   def lal(): Unit = {
     println("lal")
   }
